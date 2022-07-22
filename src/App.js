@@ -1,10 +1,11 @@
 import './App.css';
-import Week1 from './templates/Week1';
+import Week2 from './templates/Week2';
 
 function App() {
+  let arr=[0, 1, 2]
   return (
     <div className="App">
-      <Week1 />
+      <Week2 list={ arr }/>
     </div>
   );
 }
