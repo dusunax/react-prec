@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -35,4 +37,44 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* 투두리스트 */
+ul, li, a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+button {
+  all: unset;
+  width: 100%;
+  background-color: #ccc;
+  padding: 5px 0;
+  margin-top: 10px;
+  text-align: center;
+}
+.contents-area{
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+.contents-area > * {
+  flex: 1 1 auto;
+  /* border: 1px solid #ddd; */
+}
+.role-form {
+  flex: 1 1 60px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.role-form input {
+  line-height: 1.8em;
+}
+.item-list > .item {
+  border: 2px solid #222;
+  padding: 10px;
+  margin-bottom: 10px;
 }
